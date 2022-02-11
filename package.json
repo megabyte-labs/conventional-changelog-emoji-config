@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "conventional-changelog-emoji-config",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "A changelog configuration for Semantic Release that supports emojis",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
@@ -21,7 +21,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "task npm:build:tsconfig",
+    "build": "task npm:build:tsconfig && cp -rf ./src/templates ./dist/templates",
     "bump": "npm run build && npm version patch --no-commit-hooks --no-git-tag-version --force && npm publish",
     "help": "task --menu",
     "prepare": "task common:husky",
@@ -44,6 +44,8 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^16.0.0",
+    "@types/conventional-changelog-writer": "^4.0.1",
+    "@types/conventional-commits-parser": "^3.0.2",
     "@types/node": "^16.11.24",
     "@types/shelljs": "^0.8.11",
     "@types/through2": "^2.0.36",

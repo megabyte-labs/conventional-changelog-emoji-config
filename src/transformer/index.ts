@@ -47,7 +47,7 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
     if (url) {
       url = `${url}/issues/`
       // Issue URLs.
-      commit.subject = commit.subject.replace(/#(\d+)/g, (_, issue) => {
+      commit.subject = commit.subject.replace(/#(\d+)/g, (_: any, issue: any) => {
         issues.push(issue)
 
         return `[#${issue}](${url}${issue})`
@@ -55,7 +55,7 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
     }
     if (context.host) {
       // User URLs.
-      commit.subject = commit.subject.replace(/\B@([\da-z](?:-?[\d/a-z]){0,38})/g, (_, username) => {
+      commit.subject = commit.subject.replace(/\B@([\da-z](?:-?[\d/a-z]){0,38})/g, (_: any, username: any) => {
         if (username.includes('/')) {
           return `@${username}`
         }
@@ -66,7 +66,7 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   }
 
   // Remove references that already appear in the subject
-  commit.references = commit.references.filter((reference) => {
+  commit.references = commit.references.filter((reference: any) => {
     return !issues.includes(reference.issue)
   })
 

@@ -2,6 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@commitlint/config-conventional': ^16.0.0
+  '@types/conventional-changelog-writer': ^4.0.1
+  '@types/conventional-commits-parser': ^3.0.2
   '@types/node': ^16.11.24
   '@types/shelljs': ^0.8.11
   '@types/through2': ^2.0.36
@@ -28,11 +30,13 @@ dependencies:
   conventional-changelog-writer: 5.0.1
   conventional-commits-parser: 3.2.4
   cosmiconfig: 7.0.1
-  git-cz-emoji: 1.1.20_@types+node@16.11.24
+  git-cz-emoji: 1.1.24_@types+node@16.11.24
   tslib: 2.3.1
 
 devDependencies:
   '@commitlint/config-conventional': 16.0.0
+  '@types/conventional-changelog-writer': 4.0.1
+  '@types/conventional-commits-parser': 3.0.2
   '@types/node': 16.11.24
   '@types/shelljs': 0.8.11
   '@types/through2': 2.0.36
@@ -46,7 +50,7 @@ devDependencies:
   handlebars-helpers: 0.10.0
   jest-preset-ts: 1.0.1_esbuild@0.12.29
   prettier-config-sexy-mode: 1.0.1
-  semantic-release-config: 1.1.7_@types+node@16.11.24
+  semantic-release-config: 1.1.13_@types+node@16.11.24
   shelljs: 0.8.5
   through2: 4.0.2
 
@@ -3967,6 +3971,19 @@ packages:
     resolution: {integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==}
     dev: true
 
+  /@types/conventional-changelog-writer/4.0.1:
+    resolution: {integrity: sha512-S7lJJByPMkkocMWnDKOtkSLi9yXu619+GhGejPnCiNK1Dgwjf5jjzBxXYgMv47tBG8MokmCCV1sWhI53lFl6FA==}
+    dependencies:
+      '@types/conventional-commits-parser': 3.0.2
+      '@types/node': 16.11.24
+    dev: true
+
+  /@types/conventional-commits-parser/3.0.2:
+    resolution: {integrity: sha512-1kVPUHFaart1iGRFxKn8WNXYEDVAgMb+DLatgql2dGg9jTGf3bNxWtN//C/tDG3ckOLg4u7SSx+qcn8VjzI5zg==}
+    dependencies:
+      '@types/node': 16.11.24
+    dev: true
+
   /@types/eslint/7.29.0:
     resolution: {integrity: sha512-VNcvioYDH8/FxaeTKkM4/TiTwt6pBV9E3OfGmvaw8tPl0rrHCJ4Ll15HRT+pMiFAf/MLQvAzC+6RzUMEL9Ceng==}
     dependencies:
@@ -6803,14 +6820,14 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /conventional-changelog-emoji-config/1.4.4_@types+node@16.11.24:
-    resolution: {integrity: sha512-TwmafuhnNszmII6eV+ImKOVhuar6vYWL0Yft/jkuvg+gsJ7MviHC9xp8zDdEjanA3YvX872Cm9VQFfTtRg+S3A==}
+  /conventional-changelog-emoji-config/1.4.5_@types+node@16.11.24:
+    resolution: {integrity: sha512-CNfJVyHxdtqUvNcxWA0FmkvMWawx2TDR6j8WlB2r/chieLRMSJfaWJjDJijidnErHmiJ1eZCuMTxpKek2VA5+Q==}
     engines: {node: '>=14.18.0'}
     dependencies:
       conventional-changelog-writer: 5.0.1
       conventional-commits-parser: 3.2.4
       cosmiconfig: 7.0.1
-      git-cz-emoji: 1.1.20_@types+node@16.11.24
+      git-cz-emoji: 1.1.24_@types+node@16.11.24
       tslib: 2.3.1
     transitivePeerDependencies:
       - '@swc/core'
@@ -9832,8 +9849,8 @@ packages:
       assert-plus: 1.0.0
     dev: true
 
-  /git-cz-emoji/1.1.20_@types+node@16.11.24:
-    resolution: {integrity: sha512-qWuiAdrczH173UNTNLrZFRlZR+++PaP4oCTDjzHGu2MGP08mZokLdzSc2R61PNudK/mJBbQPaQfk8cHPtaEMQg==}
+  /git-cz-emoji/1.1.24_@types+node@16.11.24:
+    resolution: {integrity: sha512-m9XItxRoL6k/NCAeWubMJW2m3r29V6JkQSpZk5vtFY6IVJ8S4l6l7AVreOsRemKoWiVzxtb2I4xBbJNt1vlrNw==}
     engines: {node: '>=14.18.0'}
     dependencies:
       chalk: 4.1.2
@@ -16898,8 +16915,8 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: true
 
-  /semantic-release-config/1.1.7_@types+node@16.11.24:
-    resolution: {integrity: sha512-TW+tj5CcIWspEFxYbuAG/oIjZHggETwq6l9QaN3CLUA+qplgvdrMGztamyP8p2zKpISQSmrePJcnAxCrkdRN/A==}
+  /semantic-release-config/1.1.13_@types+node@16.11.24:
+    resolution: {integrity: sha512-ClIVaEsf+8OOSpOZzv3Jtsw+zlxD8ChnjAovmE4otjR9erAXjh3Zm3ZlAd748MANFg9Mhdai7q6etN3zD7f8Tw==}
     engines: {node: '>=14.18.0'}
     dependencies:
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
@@ -16909,8 +16926,8 @@ packages:
       '@semantic-release/gitlab': 7.0.4_semantic-release@19.0.2
       '@semantic-release/npm': 9.0.0_semantic-release@19.0.2
       '@semantic-release/release-notes-generator': 10.0.3_semantic-release@19.0.2
-      conventional-changelog-emoji-config: 1.4.4_@types+node@16.11.24
-      git-cz-emoji: 1.1.20_@types+node@16.11.24
+      conventional-changelog-emoji-config: 1.4.5_@types+node@16.11.24
+      git-cz-emoji: 1.1.24_@types+node@16.11.24
       semantic-release: 19.0.2
       semantic-release-gh: 0.0.7_semantic-release@19.0.2
       semantic-release-npm-deprecate-old-versions: 1.3.2
