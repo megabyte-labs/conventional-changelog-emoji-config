@@ -50,7 +50,7 @@ devDependencies:
   handlebars-helpers: 0.10.0
   jest-preset-ts: 1.0.1_esbuild@0.12.29
   prettier-config-sexy-mode: 1.0.1
-  semantic-release-config: 1.1.13_@types+node@16.11.24
+  semantic-release-config: 1.1.16_@types+node@16.11.24
   shelljs: 0.8.5
   through2: 4.0.2
 
@@ -573,7 +573,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.16.7
+      '@babel/helper-plugin-utils': 7.10.4
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.16.7_@babel+core@7.12.9
     dev: true
@@ -2077,7 +2077,7 @@ packages:
     dependencies:
       ajv: 6.12.6
       debug: 4.3.3
-      espree: 9.3.0
+      espree: 9.3.1
       globals: 13.12.1
       ignore: 4.0.6
       import-fresh: 3.3.0
@@ -4059,7 +4059,7 @@ packages:
   /@types/jest-specific-snapshot/0.5.5:
     resolution: {integrity: sha512-AaPPw2tE8ewfjD6qGLkEd4DOfM6pPOK7ob/RSOe1Z8Oo70r9Jgo0SlWyfxslPAOvLfQukQtiVPm6DcnjSoZU5A==}
     dependencies:
-      '@types/jest': 27.4.0
+      '@types/jest': 26.0.24
     dev: true
 
   /@types/jest/26.0.24:
@@ -4442,7 +4442,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.11.0
-      eslint-visitor-keys: 3.2.0
+      eslint-visitor-keys: 3.3.0
     dev: true
 
   /@washingtondc/development/1.0.10_@types+node@16.11.24:
@@ -6820,8 +6820,8 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /conventional-changelog-emoji-config/1.4.5_@types+node@16.11.24:
-    resolution: {integrity: sha512-CNfJVyHxdtqUvNcxWA0FmkvMWawx2TDR6j8WlB2r/chieLRMSJfaWJjDJijidnErHmiJ1eZCuMTxpKek2VA5+Q==}
+  /conventional-changelog-emoji-config/1.4.6_@types+node@16.11.24:
+    resolution: {integrity: sha512-m4RkrjpCy7xoAMuR/OKrYa2AQu6d3lHvAMONU0jKjqVYgWVYE456N6Czme9+lAIeSFlbX/vpbNrUttTNyzz/qA==}
     engines: {node: '>=14.18.0'}
     dependencies:
       conventional-changelog-writer: 5.0.1
@@ -8849,8 +8849,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-visitor-keys/3.2.0:
-    resolution: {integrity: sha512-IOzT0X126zn7ALX0dwFiUQEdsfzrm4+ISsQS8nukaJXwEyYKRSnEIIDULYg1mCtGp7UUXgfGl7BIolXREQK+XQ==}
+  /eslint-visitor-keys/3.3.0:
+    resolution: {integrity: sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
@@ -8869,8 +8869,8 @@ packages:
       escape-string-regexp: 4.0.0
       eslint-scope: 7.1.0
       eslint-utils: 3.0.0_eslint@8.8.0
-      eslint-visitor-keys: 3.2.0
-      espree: 9.3.0
+      eslint-visitor-keys: 3.3.0
+      espree: 9.3.1
       esquery: 1.4.0
       esutils: 2.0.3
       fast-deep-equal: 3.1.3
@@ -8907,13 +8907,13 @@ packages:
       eslint-visitor-keys: 1.3.0
     dev: true
 
-  /espree/9.3.0:
-    resolution: {integrity: sha512-d/5nCsb0JcqsSEeQzFZ8DH1RmxPcglRWh24EFTlUEmCKoehXGdpsx0RkHDubqUI8LSAIKMQp4r9SzQ3n+sm4HQ==}
+  /espree/9.3.1:
+    resolution: {integrity: sha512-bvdyLmJMfwkV3NCRl5ZhJf22zBFo1y8bYh3VYb+bfzqNB4Je68P2sSuXyuFquzWLebHpNd2/d5uv7yoP9ISnGQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       acorn: 8.7.0
       acorn-jsx: 5.3.2_acorn@8.7.0
-      eslint-visitor-keys: 3.2.0
+      eslint-visitor-keys: 3.3.0
     dev: true
 
   /esprima/4.0.1:
@@ -16915,8 +16915,8 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: true
 
-  /semantic-release-config/1.1.13_@types+node@16.11.24:
-    resolution: {integrity: sha512-ClIVaEsf+8OOSpOZzv3Jtsw+zlxD8ChnjAovmE4otjR9erAXjh3Zm3ZlAd748MANFg9Mhdai7q6etN3zD7f8Tw==}
+  /semantic-release-config/1.1.16_@types+node@16.11.24:
+    resolution: {integrity: sha512-ja43zgR8/S8dDi+hvFnU8u66dVsPoPdaAPhKZXWIegQel1bhUdGZBtAinefBF1+sFlmWafDUKjE+VeAMuqw5fg==}
     engines: {node: '>=14.18.0'}
     dependencies:
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
@@ -16926,7 +16926,7 @@ packages:
       '@semantic-release/gitlab': 7.0.4_semantic-release@19.0.2
       '@semantic-release/npm': 9.0.0_semantic-release@19.0.2
       '@semantic-release/release-notes-generator': 10.0.3_semantic-release@19.0.2
-      conventional-changelog-emoji-config: 1.4.5_@types+node@16.11.24
+      conventional-changelog-emoji-config: 1.4.6_@types+node@16.11.24
       git-cz-emoji: 1.1.24_@types+node@16.11.24
       semantic-release: 19.0.2
       semantic-release-gh: 0.0.7_semantic-release@19.0.2
