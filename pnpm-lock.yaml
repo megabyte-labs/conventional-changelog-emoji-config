@@ -42,7 +42,7 @@ devDependencies:
   esbuild: 0.12.29
   esbuild-node-externals: 1.4.1_esbuild@0.12.29
   eslint-config-strict-mode: 1.0.36
-  git-cz-emoji: 1.1.4_@types+node@16.11.24
+  git-cz-emoji: 1.1.15_@types+node@16.11.24
   git-dummy-commit: 1.3.0
   glob: 7.2.0
   handlebars-helpers: 0.10.0
@@ -9886,8 +9886,8 @@ packages:
       assert-plus: 1.0.0
     dev: true
 
-  /git-cz-emoji/1.1.4_@types+node@16.11.24:
-    resolution: {integrity: sha512-bYTVsnVtOxTRBjfHVVq1Yp9VNmCLOIT4IubkqrWPriBVhBAeI4842h7T/rubU+T4lUaxqT79dNnZwcgzfuMPPw==}
+  /git-cz-emoji/1.1.15_@types+node@16.11.24:
+    resolution: {integrity: sha512-tFqNkeckJhr521vizFuvRJgsd7XtrcDFz1ESSZZW7mRc/kTXoALdK1Tr1f4tYQAfH5ZN/TDtFH3N/BRu4ksksA==}
     engines: {node: '>=14.18.0'}
     dependencies:
       chalk: 4.1.2
