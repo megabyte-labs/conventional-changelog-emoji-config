@@ -1,0 +1,208 @@
+{
+  "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
+  "blueprint": {
+    "customPackageName": "conventional-changelog-emoji-config",
+    "description": "A changelog configuration for Semantic Release that supports emojis",
+    "group": "npm",
+    "name": "Conventional Changelog Emoji Config",
+    "overview": "This changelog is included in **[semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config)**. It supports emojis and is intended to work with commits submitted using [git-cz](https://www.npmjs.com/package/git-cz) with the [cz-emoji-conventional](https://www.npmjs.com/package/cz-emoji-conventional) configuration. This fork borrows the majority of its code from [gitmoji-commit-workflow](https://github.com/arvinxx/gitmoji-commit-workflow) with some modifications intended to make the CHANGELOG.md look good on both GitLab and GitHub. Normally, you can only publish releases to either GitLab or GitHub but leveraging our custom [semantic-release-gh](https://github.com/ProfessorManhattan/semantic-release-gh) plugin instead of the Semantic-branded plugin, you can post your releases to both GitLab and GitHub.",
+    "repository": {
+      "github": "https://github.com/ProfessorManhattan/conventional-changelog-emoji-config",
+      "gitlab": "https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config"
+    },
+    "slug": "conventional-changelog-emoji-config",
+    "subgroup": "config",
+    "subheader_description": "A configuration used by **[semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config)** to generate emoji-first CHANGELOGs that look good on both GitHub and GitLab",
+    "title": "Conventional Changelog Emoji Config"
+  },
+  "bugs": {
+    "email": "help@megabyte.space",
+    "url": "https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/-/issues"
+  },
+  "changelog": {
+    "displayTypes": [
+      "feat",
+      "fix",
+      "perf",
+      "refactor",
+      "revert"
+    ],
+    "showAuthor": true
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "helpUrl": "https://megabyte.space/docs/contributing/commits"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-emoji-conventional"
+    }
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  },
+  "description": "A changelog configuration for Semantic Release that supports emojis",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/node": "^16.11.6",
+    "@washingtondc/development": "latest",
+    "cz-emoji-conventional": "^1.0.1",
+    "esbuild": "^0.12.29",
+    "esbuild-node-externals": "^1.3.0",
+    "eslint-config-strict-mode": "latest",
+    "glob": "^7.2.0",
+    "handlebars-helpers": "^0.10.0",
+    "jest-preset-ts": "^1.0.0",
+    "prettier-config-sexy-mode": "latest",
+    "semantic-release-config": "latest"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-strict-mode"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/megabytelabs"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/ProfessorManhattan"
+    }
+  ],
+  "homepage": "https://megabyte.space",
+  "jest": {
+    "preset": "jest-preset-ts",
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "filename": "index.html",
+          "logoImgPath": "./.config/assets/logo-jest-report.png",
+          "openReport": true,
+          "pageTitle": "Code Coverage Report",
+          "publicPath": "./coverage"
+        }
+      ]
+    ]
+  },
+  "keywords": [
+    "changelog",
+    "config",
+    "conventional-changelog",
+    "emoji",
+    "gitmoji",
+    "mblabs",
+    "megabytelabs",
+    "preset",
+    "professormanhattan",
+    "washingtondc"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "**/!(logo).(jpg|png)": [
+      "task image:compress --"
+    ],
+    "**/*": [
+      "task lint:any --"
+    ],
+    "**/*.(css|html|less|md|mjml|php|scss|sh|xml)": [
+      "task fix:prettier --"
+    ],
+    "**/*.(js|jsx|ts|tsx)": [
+      "task fix:js --",
+      "task lint:js --"
+    ],
+    "**/*.json": [
+      "task fix:json --"
+    ],
+    "**/*.sh": [
+      "task lint:shell --"
+    ],
+    "**/*.toml": [
+      "task lint:toml --"
+    ],
+    "**/*.xml": [
+      "task fix:xml --",
+      "task lint:xml --"
+    ],
+    "**/*.yml": [
+      "task fix:yaml --",
+      "task lint:yaml --"
+    ],
+    "logo.png": [
+      "task image:resize -- 200 200",
+      "task image:compress --"
+    ]
+  },
+  "main": "dist/main.js",
+  "name": "conventional-changelog-emoji-config",
+  "nodemonConfig": {
+    "exec": "tsc -p . && node --inspect-brk dist/main",
+    "ext": "js,jsx,json,ts,tsx,yml",
+    "ignore": [
+      "src/**/*.spec.ts"
+    ],
+    "watch": [
+      ".env",
+      "src"
+    ]
+  },
+  "ntl": {
+    "descriptions": {
+      "build": "Builds the project using the build command specified under scripts in package.json",
+      "help": "Display the Bodega Taskfile.yml interactive help menu",
+      "prepare": "A hook triggered by running npm install that runs logic such as installing pre-commit hooks",
+      "repair": "Fixes basic issues in projects that are having trouble running basic commands like 'task start'",
+      "start": "Entrypoint for new developers that installs requirements and then runs 'task start'",
+      "test": "Runs the appropriate test logic by running the test command defined under scripts in package.json"
+    }
+  },
+  "prettier": "prettier-config-sexy-mode",
+  "private": false,
+  "publishConfig": {
+    "@megabyte:registry": "https://gitlab.com/api/v4/projects//packages/npm/",
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "master",
+      "next",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "extends": "semantic-release-config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfessorManhattan/conventional-changelog-emoji-config.git"
+  },
+  "scripts": {
+    "build": "task npm:build:tsconfig",
+    "help": "task --menu",
+    "prepare": "task common:husky",
+    "repair": "bash <(curl -sS https://install.doctor/repair)",
+    "start": "bash start.sh",
+    "test": "task npm:test:none"
+  },
+  "type": "commonjs",
+  "typings": "dist/main.d.ts",
+  "version": "1.4.3"
+}
