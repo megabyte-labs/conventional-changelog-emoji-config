@@ -11,6 +11,9 @@ includes:
   boilerplate:prompt: ./.config/taskfiles/boilerplate/Taskfile-prompt.yml
   ci: ./.config/taskfiles/ci/Taskfile.yml
   ci:github: ./.config/taskfiles/ci/Taskfile-github.yml
+  project:
+    taskfile: Taskfile-project.yml
+    optional: true
   common: ./.config/taskfiles/common/Taskfile.yml
   common:code: ./.config/taskfiles/common/Taskfile-code.yml
   common:update: ./.config/taskfiles/common/Taskfile-update.yml
@@ -41,9 +44,6 @@ includes:
   nest: ./.config/taskfiles/nest/Taskfile.yml
   npm: ./.config/taskfiles/npm/Taskfile.yml
   npm:cov: ./.config/taskfiles/npm/Taskfile-cov.yml
-  project:
-    taskfile: Taskfile-project.yml
-    optional: true
   npm:doc: ./.config/taskfiles/npm/Taskfile-doc.yml
   packer: ./.config/taskfiles/packer/Taskfile.yml
   packer:build: ./.config/taskfiles/packer/Taskfile-build.yml
