@@ -1,4 +1,3 @@
-import type { DisplayNameOptions } from './typeDisplayName'
 import { getDisplayName } from './typeDisplayName'
 
 describe('typeDisplayName', () => {

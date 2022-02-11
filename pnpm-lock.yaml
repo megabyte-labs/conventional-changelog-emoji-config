@@ -10,7 +10,6 @@ specifiers:
   conventional-changelog-writer: ^5.0.1
   conventional-commits-parser: ^3.2.4
   cosmiconfig: ^7.0.1
-  cz-emoji-conventional: ^1.0.1
   esbuild: ^0.12.29
   esbuild-node-externals: ^1.4.1
   eslint-config-strict-mode: latest
@@ -39,7 +38,6 @@ devDependencies:
   '@types/through2': 2.0.36
   '@washingtondc/development': 1.0.10_@types+node@16.11.24
   conventional-changelog-core: 4.2.4
-  cz-emoji-conventional: 1.0.1_@types+node@16.11.24
   esbuild: 0.12.29
   esbuild-node-externals: 1.4.1_esbuild@0.12.29
   eslint-config-strict-mode: 1.0.36
@@ -571,7 +569,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.16.7
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.16.7_@babel+core@7.12.9
     dev: true
@@ -4044,7 +4042,7 @@ packages:
   /@types/jest-specific-snapshot/0.5.5:
     resolution: {integrity: sha512-AaPPw2tE8ewfjD6qGLkEd4DOfM6pPOK7ob/RSOe1Z8Oo70r9Jgo0SlWyfxslPAOvLfQukQtiVPm6DcnjSoZU5A==}
     dependencies:
-      '@types/jest': 26.0.24
+      '@types/jest': 27.4.0
     dev: true
 
   /@types/jest/26.0.24:
@@ -6805,14 +6803,19 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /conventional-changelog-emoji-config/1.4.3:
-    resolution: {integrity: sha512-UdnBHJ/h60cVL/Dh1gMGjNIzWboGHPRfvehwAUkimAZjVUAjQLW/oISIucpFzFLkbsXz0/EPNa4lENV6J5vJNg==}
+  /conventional-changelog-emoji-config/1.4.4_@types+node@16.11.24:
+    resolution: {integrity: sha512-TwmafuhnNszmII6eV+ImKOVhuar6vYWL0Yft/jkuvg+gsJ7MviHC9xp8zDdEjanA3YvX872Cm9VQFfTtRg+S3A==}
     engines: {node: '>=14.18.0'}
     dependencies:
       conventional-changelog-writer: 5.0.1
       conventional-commits-parser: 3.2.4
       cosmiconfig: 7.0.1
+      git-cz-emoji: 1.1.20_@types+node@16.11.24
       tslib: 2.3.1
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
     dev: true
 
   /conventional-changelog-writer/5.0.1:
@@ -16906,7 +16909,7 @@ packages:
       '@semantic-release/gitlab': 7.0.4_semantic-release@19.0.2
       '@semantic-release/npm': 9.0.0_semantic-release@19.0.2
       '@semantic-release/release-notes-generator': 10.0.3_semantic-release@19.0.2
-      conventional-changelog-emoji-config: 1.4.3
+      conventional-changelog-emoji-config: 1.4.4_@types+node@16.11.24
       git-cz-emoji: 1.1.20_@types+node@16.11.24
       semantic-release: 19.0.2
       semantic-release-gh: 0.0.7_semantic-release@19.0.2

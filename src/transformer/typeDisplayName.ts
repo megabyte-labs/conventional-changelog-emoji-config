@@ -5,7 +5,7 @@ export interface DisplayNameOptions {
   readonly withEmoji?: boolean
 }
 
-const typeMap = CommitProfile.types
+const typeMap: any = CommitProfile.types
 
 export const getDisplayName = (type: CommitTypes | string, options: DisplayNameOptions = {}): string => {
   const { withEmoji = true } = options
