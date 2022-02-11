@@ -1,85 +1,83 @@
-import type { CommitTypes } from '../commit-types';
+import type { CommitTypes } from '../commit-types'
 
 export interface DisplayNameOptions {
-  withEmoji?: boolean;
-  language?: 'en-US' | 'zh-CN';
+  readonly language?: 'en-US' | 'zh-CN'
+  readonly withEmoji?: boolean
 }
 
 interface TypeNameMap {
-  emoji: string;
-  'en-US': string;
-  'zh-CN': string;
+  readonly emoji: string
+  readonly 'en-US': string
+  readonly 'zh-CN': string
 }
 
-const typeMap: Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> = {
-  feat: {
-    emoji: '✨',
-    'en-US': 'Features',
-    'zh-CN': '新特性',
-  },
-  fix: {
-    emoji: '🐛',
-    'en-US': 'Bug Fixes',
-    'zh-CN': '修复',
-  },
+const typeMap: Record<Exclude<CommitTypes, 'wip'>, TypeNameMap> | any = {
   build: {
     emoji: '👷',
     'en-US': 'Build System',
-    'zh-CN': '构建系统',
+    'zh-CN': '构建系统'
   },
   chore: {
     emoji: '🎫',
     'en-US': 'Chores',
-    'zh-CN': '杂项',
+    'zh-CN': '杂项'
   },
   ci: {
     emoji: '🔧',
     'en-US': 'Continuous Integration',
-    'zh-CN': '持续集成',
+    'zh-CN': '持续集成'
   },
   docs: {
     emoji: '📝',
-    'zh-CN': '文档',
     'en-US': 'Documentation',
+    'zh-CN': '文档'
   },
-  test: {
-    emoji: '✅',
-    'zh-CN': '测试',
-    'en-US': 'Tests',
+  feat: {
+    emoji: '✨',
+    'en-US': 'Features',
+    'zh-CN': '新特性'
+  },
+  fix: {
+    emoji: '🐛',
+    'en-US': 'Bug Fixes',
+    'zh-CN': '修复'
   },
   perf: {
     emoji: '⚡',
     'en-US': 'Performance Improvements',
-    'zh-CN': '性能优化',
+    'zh-CN': '性能优化'
   },
   refactor: {
     emoji: '♻',
     'en-US': 'Code Refactoring',
-    'zh-CN': '重构',
+    'zh-CN': '重构'
   },
   revert: {
     emoji: '⏪',
-    'zh-CN': '回滚',
     'en-US': 'Reverts',
+    'zh-CN': '回滚'
   },
   style: {
     emoji: '💄',
     'en-US': 'Styles',
-    'zh-CN': '样式',
+    'zh-CN': '样式'
   },
-};
+  test: {
+    emoji: '✅',
+    'en-US': 'Tests',
+    'zh-CN': '测试'
+  }
+}
 
-export const getDisplayName = (
-  type: CommitTypes | string,
-  options: DisplayNameOptions = {},
-): string => {
-  const { withEmoji = true, language = 'en-US' } = options;
+export const getDisplayName = (type: CommitTypes | string, options: DisplayNameOptions = {}): string => {
+  const { withEmoji = true, language = 'en-US' } = options
 
   if (type in typeMap) {
-    const item = typeMap[type];
-    const { emoji } = item;
-    return `${withEmoji ? `${emoji} ` : ''}${item[language]}`;
+    const item = typeMap[type]
+    const { emoji } = item
+
+    return `${withEmoji ? `${emoji} ` : ''}${item[language]}`
   }
 
-  return type;
-};
+  return type
+}

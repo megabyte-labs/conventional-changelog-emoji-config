@@ -10,9 +10,9 @@ export type CommitTypes =
   | 'style'
   | 'test'
   | 'wip'
-  | 'chore';
+  | 'chore'
 
-const types: CommitTypes[] = [
+const types: readonly CommitTypes[] = [
   'build',
   'ci',
   'docs',
@@ -24,7 +24,7 @@ const types: CommitTypes[] = [
   'style',
   'test',
   'chore',
-  'wip',
-];
+  'wip'
+]
 
-export default types;
+export default types

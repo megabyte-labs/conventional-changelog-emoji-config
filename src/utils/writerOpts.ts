@@ -1,4 +1,4 @@
-import customConfig from '../customConfig';
-import handleWriterOpts from '../handleWriterOpts';
+import customConfig from '../customConfig'
+import handleWriterOptions from '../handleWriterOpts'
 
-export default handleWriterOpts(customConfig);
+export default handleWriterOptions(customConfig) as any

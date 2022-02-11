@@ -1,8 +1,8 @@
-import gitmojiParserOpts from '../parser-opts';
+import gitmojiParserOptions from '../parser-opts'
 
 export default {
-  ...gitmojiParserOpts,
+  ...gitmojiParserOptions,
   noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
-  revertPattern: /revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
-  revertCorrespondence: [`header`, `hash`],
-};
+  revertCorrespondence: ['header', 'hash'],
+  revertPattern: /revert:\s([\S\s]*?)\s*This reverts commit (\w*)\./
+}

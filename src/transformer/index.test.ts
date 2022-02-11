@@ -1,46 +1,46 @@
-import transform from './index';
-import type { Commit } from 'conventional-commits-parser';
+import type { Commit } from 'conventional-commits-parser'
+import transform from './index'
 
 const generateCommit = (commit: Partial<Commit>) =>
   ({
-    header: '',
-    notes: [],
-    references: [],
-    mentions: [],
     body: undefined,
     footer: undefined,
+    header: '',
+    mentions: [],
     merge: undefined,
+    notes: [],
+    references: [],
     revert: undefined,
-    ...commit,
-  } as Commit);
+    ...commit
+  } as Commit)
 
-const defaultContext = { commit: '', date: '', issue: '' };
+const defaultContext = { commit: '', date: '', issue: '' }
 
 describe('transform', () => {
   it('return commit if has feat', () => {
-    const transformer = transform({});
+    const transformer = transform({})
 
     const commit = generateCommit({
       header: 'amazing new module',
-      type: 'feat',
-    });
+      type: 'feat'
+    })
 
     expect(transformer(commit, defaultContext)).toEqual({
-      type: '✨ Features',
       header: 'amazing new module',
       mentions: [],
       notes: [],
       references: [],
-    });
-  });
+      type: '✨ Features'
+    })
+  })
 
   it('should truncated commit hash', () => {
-    const transformer = transform({});
+    const transformer = transform({})
     const commit = generateCommit({
-      header: '',
-      type: 'feat',
       hash: '12345678abc',
-    });
+      header: '',
+      type: 'feat'
+    })
 
     expect(transformer(commit, defaultContext)).toEqual({
       hash: '1234567',
@@ -48,42 +48,42 @@ describe('transform', () => {
       mentions: [],
       notes: [],
       references: [],
-      type: '✨ Features',
-    });
-  });
+      type: '✨ Features'
+    })
+  })
 
   describe('Custom Config', () => {
     it('should only display included types', () => {
       const transformer = transform({
-        displayTypes: ['fix'],
-      });
+        displayTypes: ['fix']
+      })
       const featCommit = generateCommit({
-        type: 'feat',
-      });
+        type: 'feat'
+      })
       const fixCommit = generateCommit({
-        type: 'fix',
-      });
+        type: 'fix'
+      })
 
-      expect(transformer(featCommit, defaultContext)).toBeUndefined();
+      expect(transformer(featCommit, defaultContext)).toBeUndefined()
       expect(transformer(fixCommit, defaultContext)).toEqual({
         header: '',
         mentions: [],
         notes: [],
         references: [],
-        type: '🐛 Bug Fixes',
-      });
-    });
+        type: '🐛 Bug Fixes'
+      })
+    })
 
     it('should show scope display name', () => {
       const transformer = transform({
         scopeDisplayName: {
-          foo: 'module-foo',
-        },
-      });
+          foo: 'module-foo'
+        }
+      })
       const commit = generateCommit({
-        type: 'feat',
         scope: 'foo',
-      });
+        type: 'feat'
+      })
 
       expect(transformer(commit, defaultContext)).toEqual({
         header: '',
@@ -91,8 +91,8 @@ describe('transform', () => {
         notes: [],
         references: [],
         scope: 'module-foo',
-        type: '✨ Features',
-      });
-    });
-  });
-});
+        type: '✨ Features'
+      })
+    })
+  })
+})

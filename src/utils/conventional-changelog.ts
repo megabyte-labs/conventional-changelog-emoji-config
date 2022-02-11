@@ -1,4 +1,4 @@
-import parserOpts from './parserOpts';
-import writerOpts from './writerOpts';
+import parserOptions from './parserOpts'
+import writerOptions from './writerOpts'
 
-export default { parserOpts, writerOpts };
+export default { parserOpts: parserOptions, writerOpts: writerOptions } as any

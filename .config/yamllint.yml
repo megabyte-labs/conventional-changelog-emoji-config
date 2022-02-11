@@ -1,4 +1,6 @@
 ---
+extends: default
+
 ignore: |
   .autodoc/
   .cache/
@@ -22,8 +24,6 @@ ignore: |
   roles/
   testdata/
   venv/
-
-extends: default
 
 rules:
   braces:

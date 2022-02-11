@@ -25,42 +25,8 @@
   "email": {
     "help": "help@megabyte.space"
   },
-  "emoji_beginnings": [
-    "🚀 ",
-    "🔥👉 ",
-    "👉 ",
-    "😉 ",
-    "🆓 ",
-    "🐴 ",
-    "👀 ",
-    "🎉 ",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  "emoji_endings": [
-    " 🚀",
-    " 🔥🔥🔥",
-    " 👏",
-    " 😉",
-    " 🐙",
-    " 🐴",
-    " 👀",
-    " 🎟",
-    " 🎉🎉",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
+  "emoji_beginnings": ["🚀 ", "🔥👉 ", "👉 ", "😉 ", "🆓 ", "🐴 ", "👀 ", "🎉 ", "", "", "", "", "", "", "", ""],
+  "emoji_endings": [" 🚀", " 🔥🔥🔥", " 👏", " 😉", " 🐙", " 🐴", " 👀", " 🎟", " 🎉🎉", "", "", "", "", "", "", ""],
   "github_prefix": "<i></i>",
   "gitlab_pipelines": [
     {
@@ -114,10 +80,7 @@
   "overview": "[[ This is a new repository without the details filled in yet. Look for the section about blueprint data in the CONTRIBUTING.md to set up the project. ]]",
   "plugins": {
     "eslint": [
-      [
-        "ESLint Plugin",
-        "Description"
-      ],
+      ["ESLint Plugin", "Description"],
       [
         "[`@typescript-eslint/eslint-plugin`](https://npmjs.com/package/@typescript-eslint/eslint-plugin)",
         "An ESLint plugin which provides lint rules for TypeScript codebases"
@@ -150,10 +113,7 @@
         "[`eslint-formatter-summary`](https://npmjs.com/package/eslint-formatter-summary)",
         "Alternate formatting style for the results that displays a table"
       ],
-      [
-        "[`eslint-plugin-angular`](https://npmjs.com/package/eslint-plugin-angular)",
-        "Rules for Angular applications"
-      ],
+      ["[`eslint-plugin-angular`](https://npmjs.com/package/eslint-plugin-angular)", "Rules for Angular applications"],
       [
         "[`eslint-plugin-array-func`](https://npmjs.com/package/eslint-plugin-array-func)",
         "Rules for Array functions and methods"
@@ -170,18 +130,12 @@
         "[`eslint-plugin-etc`](https://npmjs.com/package/eslint-plugin-etc)",
         "More generalcpurpose TypeScript-related ESLint rules"
       ],
-      [
-        "[`eslint-plugin-ext`](https://npmjs.com/package/eslint-plugin-ext)",
-        "eslint extended rules"
-      ],
+      ["[`eslint-plugin-ext`](https://npmjs.com/package/eslint-plugin-ext)", "eslint extended rules"],
       [
         "[`eslint-plugin-filenames`](https://npmjs.com/package/eslint-plugin-filenames)",
         "ESLint plugin to check filenames"
       ],
-      [
-        "[`eslint-plugin-fp`](https://npmjs.com/package/eslint-plugin-fp)",
-        "ESLint rules for functional programming"
-      ],
+      ["[`eslint-plugin-fp`](https://npmjs.com/package/eslint-plugin-fp)", "ESLint rules for functional programming"],
       [
         "[`eslint-plugin-functional`](https://npmjs.com/package/eslint-plugin-functional)",
         "ESLint plugin to disable mutation and promote functional programming in JavaScript and TypeScript"
@@ -190,18 +144,12 @@
         "[`eslint-plugin-import`](https://npmjs.com/package/eslint-plugin-import)",
         "ESLint plugin with rules that help validate proper imports"
       ],
-      [
-        "[`eslint-plugin-jest`](https://npmjs.com/package/eslint-plugin-jest)",
-        "ESLint plugin for Jest "
-      ],
+      ["[`eslint-plugin-jest`](https://npmjs.com/package/eslint-plugin-jest)", "ESLint plugin for Jest "],
       [
         "[`eslint-plugin-jest-async`](https://npmjs.com/package/eslint-plugin-jest-async)",
         "ESLint rules for Jest to detect improper test assertions for asynchronous actions"
       ],
-      [
-        "[`eslint-plugin-jest-dom`](https://npmjs.com/package/eslint-plugin-dom)",
-        "Lint DOM API performance"
-      ],
+      ["[`eslint-plugin-jest-dom`](https://npmjs.com/package/eslint-plugin-dom)", "Lint DOM API performance"],
       [
         "[`eslint-plugin-jest-formatting`](https://npmjs.com/package/eslint-plugin-formatting)",
         "Linting rules for ESLint realted to code style formatting"
@@ -238,10 +186,7 @@
         "[`eslint-plugin-no-use-extend-native`](https://npmjs.com/package/eslint-plugin-no-use-extend-native)",
         "ESLint plugin to prevent use of extended native objects"
       ],
-      [
-        "[`eslint-plugin-node`](https://npmjs.com/package/eslint-plugin-node)",
-        "Additional ESLint's rules for Node.js"
-      ],
+      ["[`eslint-plugin-node`](https://npmjs.com/package/eslint-plugin-node)", "Additional ESLint's rules for Node.js"],
       [
         "[`eslint-plugin-optimize-regex`](https://npmjs.com/package/eslint-plugin-optimize-regex)",
         "Optimize regex literals"
@@ -262,18 +207,12 @@
         "[`eslint-plugin-regexp`](https://npmjs.com/package/eslint-plugin-regexp)",
         "ESLint plugin for finding RegExp mistakes and RegExp style guide violations"
       ],
-      [
-        "[`eslint-plugin-rxjs`](https://npmjs.com/package/eslint-plugin-rxjs)",
-        "ESLint rules for RxJS "
-      ],
+      ["[`eslint-plugin-rxjs`](https://npmjs.com/package/eslint-plugin-rxjs)", "ESLint rules for RxJS "],
       [
         "[`eslint-plugin-security`](https://npmjs.com/package/eslint-plugin-security)",
         "ESLint rules for Node Security"
       ],
-      [
-        "[`eslint-plugin-sonarjs`](https://npmjs.com/package/eslint-plugin-sonarjs)",
-        "SonarJS rules for ESLint "
-      ],
+      ["[`eslint-plugin-sonarjs`](https://npmjs.com/package/eslint-plugin-sonarjs)", "SonarJS rules for ESLint "],
       [
         "[`eslint-plugin-sort-class-members`](https://npmjs.com/package/eslint-plugin-sort-class-members)",
         "ESLint rule for enforcing consistent ES6 class member order"
@@ -298,10 +237,7 @@
         "[`eslint-plugin-typescript-sort-keys`](https://npmjs.com/package/eslint-plugin-typescript-sort-keys)",
         "A linter plugin to require sorting interface and string enum keys"
       ],
-      [
-        "[`eslint-plugin-unicorn`](https://npmjs.com/package/eslint-plugin-unicorn)",
-        "Various awesome ESLint rules"
-      ],
+      ["[`eslint-plugin-unicorn`](https://npmjs.com/package/eslint-plugin-unicorn)", "Various awesome ESLint rules"],
       [
         "[`eslint-plugin-unused-imports`](https://npmjs.com/package/eslint-plugin-unused-imports)",
         "Package to seperate no-unused-vars and no-unused-imports for ESLint as well as providing an autofixer for the latter"
@@ -316,10 +252,7 @@
       ]
     ],
     "jest": [
-      [
-        "Jest Plugin",
-        "Description"
-      ],
+      ["Jest Plugin", "Description"],
       [
         "[`@jest-runner/electron`](https://npmjs.com/package/@jest-runner/electron)",
         "custom test runner for Jest that allows tests to be run in Electron environment"
@@ -328,30 +261,18 @@
         "[`@storybook/addon-storyshots`](https://npmjs.com/package/@storybook/addon-storyshots)",
         "StoryShots adds automatic Jest Snapshot Testing for Storybook"
       ],
-      [
-        "[`expect-puppeteer`](https://npmjs.com/package/expect-puppeteer)",
-        "Run the tests using Jest & Puppeteer"
-      ],
+      ["[`expect-puppeteer`](https://npmjs.com/package/expect-puppeteer)", "Run the tests using Jest & Puppeteer"],
       [
         "[`jest-chain`](https://npmjs.com/package/jest-chain)",
         "Chain Jest matchers together to create one powerful assertion"
       ],
-      [
-        "[`jest-dom`](https://npmjs.com/package/jest-dom)",
-        "Custom jest matchers to test the state of the DOM"
-      ],
+      ["[`jest-dom`](https://npmjs.com/package/jest-dom)", "Custom jest matchers to test the state of the DOM"],
       [
         "[`jest-html-reporters`](https://npmjs.com/package/jest-html-reporters)",
         "Jest test results processor for generating a summary in HTML"
       ],
-      [
-        "[`jest-image-snapshot`](https://npmjs.com/package/jest-image-snapshot)",
-        "Jest matcher for image comparisons"
-      ],
-      [
-        "[`jest-json-schema`](https://npmjs.com/package/jest-json-schema)",
-        "JSON schema matcher for Jest"
-      ],
+      ["[`jest-image-snapshot`](https://npmjs.com/package/jest-image-snapshot)", "Jest matcher for image comparisons"],
+      ["[`jest-json-schema`](https://npmjs.com/package/jest-json-schema)", "JSON schema matcher for Jest"],
       [
         "[`jest-preset-angular`](https://npmjs.com/package/jest-preset-angular)",
         "A preset of Jest configuration for Angular projects"
@@ -360,26 +281,14 @@
         "[`jest-puppeteer`](https://npmjs.com/package/jest-puppeteer)",
         "Jest preset containing all required configuration for writing integration tests using Puppeteer"
       ],
-      [
-        "[`jest-runner-eslint`](https://npmjs.com/package/jest-runner-eslint)",
-        "ESLint runner for Jest"
-      ],
+      ["[`jest-runner-eslint`](https://npmjs.com/package/jest-runner-eslint)", "ESLint runner for Jest"],
       [
         "[`jest-runner-groups`](https://npmjs.com/package/jest-runner-groups)",
         "A custom runner that allows to tag test files and run groups of tests with Jest"
       ],
-      [
-        "[`jest-runner-prettier`](https://npmjs.com/package/jest-runner-prettier)",
-        "Prettier runner for Jest"
-      ],
-      [
-        "[`jest-runner-stylelint`](https://npmjs.com/package/jest-runner-stylelint)",
-        "Stylelint runner for Jest"
-      ],
-      [
-        "[`jest-runner-tsc`](https://npmjs.com/package/jest-runner-tsc)",
-        "A Jest runner for the TypeScript compiler"
-      ],
+      ["[`jest-runner-prettier`](https://npmjs.com/package/jest-runner-prettier)", "Prettier runner for Jest"],
+      ["[`jest-runner-stylelint`](https://npmjs.com/package/jest-runner-stylelint)", "Stylelint runner for Jest"],
+      ["[`jest-runner-tsc`](https://npmjs.com/package/jest-runner-tsc)", "A Jest runner for the TypeScript compiler"],
       [
         "[`jest-watch-master`](https://npmjs.com/package/jest-watch-master)",
         "Jest watch plugin for checking changes since master"
@@ -394,16 +303,8 @@
       ]
     ],
     "prettier": [
-      [
-        "Prettier Plugin",
-        "Description",
-        "File Types"
-      ],
-      [
-        "[`@prettier/plugin-php`](https://npmjs.com/package/@prettier/plugin-php)",
-        "Adds support for PHP",
-        "`*.php`"
-      ],
+      ["Prettier Plugin", "Description", "File Types"],
+      ["[`@prettier/plugin-php`](https://npmjs.com/package/@prettier/plugin-php)", "Adds support for PHP", "`*.php`"],
       [
         "[`@prettier/plugin-pug`](https://npmjs.com/package/@prettier/plugin-pug)",
         "Adds support for Pug templates",
@@ -434,11 +335,7 @@
         "Adds support for INI files",
         "`*.ini`"
       ],
-      [
-        "[`prettier-plugin-java`](https://npmjs.com/package/prettier-plugin-java)",
-        "Adds support for Java",
-        "`*.java`"
-      ],
+      ["[`prettier-plugin-java`](https://npmjs.com/package/prettier-plugin-java)", "Adds support for Java", "`*.java`"],
       [
         "[`prettier-plugin-jsdoc`](https://npmjs.com/package/prettier-plugin-jsdoc)",
         "Adds support for JSDoc comments in TypeScript/JavaScript files",
@@ -469,11 +366,7 @@
         "Adds support for Solidity code",
         "`*.sol`"
       ],
-      [
-        "[`prettier-plugin-sql`](https://npmjs.com/package/prettier-plugin-sql)",
-        "Adds support for SQL",
-        "`*.sql`"
-      ]
+      ["[`prettier-plugin-sql`](https://npmjs.com/package/prettier-plugin-sql)", "Adds support for SQL", "`*.sql`"]
     ]
   },
   "profile": {

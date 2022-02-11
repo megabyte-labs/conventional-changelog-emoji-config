@@ -1,35 +1,35 @@
-import type { CommitTypes } from './commit-types';
-import { cosmiconfigSync } from 'cosmiconfig';
+import { cosmiconfigSync } from 'cosmiconfig'
+import type { CommitTypes } from './commit-types'
 
 export interface CustomConfig {
   /**
-   * scope 在 Changelog 中的显示信息
+   * 待显示的 scope
    */
-  scopeDisplayName?: Record<string, string>;
+  readonly displayScopes?: readonly string[]
   /**
    * 待显示的 type 组
    */
-  displayTypes?: CommitTypes[];
+  readonly displayTypes?: readonly CommitTypes[]
   /**
-   * 待显示的 scope
+   * Scope 在 Changelog 中的显示信息
    */
-  displayScopes?: string[];
+  readonly scopeDisplayName?: Record<string, string>
   /**
    * 是否显示作者
    */
-  showAuthor?: boolean;
+  readonly showAuthor?: boolean
   /**
-   * whether to include emoji in title
+   * Title language
    */
-  withEmoji?: boolean;
+  readonly titleLanguage?: 'en-US' | 'zh-CN'
   /**
-   * title language
+   * Whether to include emoji in title
    */
-  titleLanguage?: 'en-US' | 'zh-CN';
+  readonly withEmoji?: boolean
 }
 
-const explorer = cosmiconfigSync('changelog');
+const explorer = cosmiconfigSync('changelog')
 
-const { config } = explorer.search() || { config: {} };
+const { config } = explorer.search() || { config: {} }
 
-export default config;
+export default config
