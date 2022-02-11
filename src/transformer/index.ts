@@ -1,4 +1,4 @@
-import types from '@gitmoji/commit-types'
+import types from '../commit-types'
 import type { Context } from 'conventional-changelog-writer'
 import type { Commit } from 'conventional-commits-parser'
 import type { CommitTypes } from '../commit-types'
@@ -24,13 +24,10 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
 
   if (!displayTypes.includes(<CommitTypes>commit.type) && discard) return
 
-  // 修改 type 标题
   commit.type = getDisplayName(<any>commit.type, {
-    language: customConfig.titleLanguage,
     withEmoji: customConfig.withEmoji
   })
 
-  /** * 处理 scope ** */
   if (commit.scope === '*') {
     commit.scope = ''
   }
