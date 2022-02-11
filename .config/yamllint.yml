@@ -41,6 +41,9 @@ rules:
     indent-sequences: consistent
     level: error
   line-length:
+    ignore: |
+      .config/taskfiles/
+      common/.config/taskfiles/
     level: error
     max: 160
   truthy:

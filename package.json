@@ -30,7 +30,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-emoji-conventional"
+      "path": "node_modules/git-cz-emoji"
     }
   },
   "typings": "dist/main.d.ts",
@@ -51,10 +51,11 @@
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
     "eslint-config-strict-mode": "latest",
+    "git-cz-emoji": "latest",
     "git-dummy-commit": "^1.3.0",
     "glob": "^7.2.0",
     "handlebars-helpers": "^0.10.0",
-    "jest-preset-ts": "^1.0.0",
+    "jest-preset-ts": "latest",
     "prettier-config-sexy-mode": "latest",
     "semantic-release-config": "latest",
     "shelljs": "^0.8.5",
@@ -199,6 +200,10 @@
     ],
     "**/*.json": [
       "task fix:json --"
+    ],
+    "**/*.py": [
+      "task fix:python --",
+      "task lint:python --"
     ],
     "**/*.sh": [
       "task lint:shell --"
