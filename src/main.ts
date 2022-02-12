@@ -11,3 +11,4 @@ export default {
   recommendedBumpOpts: recommendedBumpOptions,
   writerOpts: writerOptions
 } as any
+module.exports = exports.default

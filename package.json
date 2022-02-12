@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "conventional-changelog-emoji-config",
-  "version": "1.4.6",
+  "version": "1.4.8",
   "description": "A changelog configuration for Semantic Release that supports emojis",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
@@ -36,10 +36,12 @@
   },
   "typings": "dist/main.d.ts",
   "dependencies": {
+    "conventional-changelog-gitmoji-config": "^1.4.3",
     "conventional-changelog-writer": "^5.0.1",
     "conventional-commits-parser": "^3.2.4",
     "cosmiconfig": "^7.0.1",
     "git-cz-emoji": "latest",
+    "semantic-release": "^19.0.2",
     "tslib": "^2.3.1"
   },
   "devDependencies": {

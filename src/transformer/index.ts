@@ -21,9 +21,9 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   if (customConfig.displayTypes) {
     displayTypes = customConfig.displayTypes
   }
-
+  console.log(displayTypes)
   if (!displayTypes.includes(<CommitTypes>commit.type) && discard) return
-
+  console.log('here')
   commit.type = getDisplayName(<any>commit.type, {
     withEmoji: customConfig.withEmoji
   })
@@ -31,7 +31,7 @@ export default (customConfig: CustomConfig) => (commit: Commit, context: Context
   if (commit.scope === '*') {
     commit.scope = ''
   }
-
+  console.log(customConfig)
   if (customConfig.displayScopes && !customConfig.displayScopes?.includes(<any>commit.scope)) return
 
   if (customConfig.scopeDisplayName) {
