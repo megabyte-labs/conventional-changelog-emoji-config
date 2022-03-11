@@ -375,7 +375,8 @@
         "Adds support for Solidity code",
         "`*.sol`"
       ],
-      ["[`prettier-plugin-sql`](https://npmjs.com/package/prettier-plugin-sql)", "Adds support for SQL", "`*.sql`"]
+      ["[`prettier-plugin-sql`](https://npmjs.com/package/prettier-plugin-sql)", "Adds support for SQL", "`*.sql`"],
+      ["[`prettier-plugin-toml`](https://npmjs.com/package/prettier-plugin-toml)", "Adds support for TOML", "`*.toml`"]
     ]
   },
   "profile": {

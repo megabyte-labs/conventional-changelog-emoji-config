@@ -4077,14 +4077,14 @@ packages:
   /@types/jest-json-schema/2.1.4:
     resolution: {integrity: sha512-jAvF/IsPhF1bEqJxMR90z4vTCbuJAqDMG0stfsBceSInu1NphLKMR1HhjkDC54KvfAIGDlNHA1jyRCcSFqvPfg==}
     dependencies:
-      '@types/jest': 27.4.1
+      '@types/jest': 26.0.24
       ajv: 6.12.6
     dev: true
 
   /@types/jest-specific-snapshot/0.5.5:
     resolution: {integrity: sha512-AaPPw2tE8ewfjD6qGLkEd4DOfM6pPOK7ob/RSOe1Z8Oo70r9Jgo0SlWyfxslPAOvLfQukQtiVPm6DcnjSoZU5A==}
     dependencies:
-      '@types/jest': 27.4.1
+      '@types/jest': 26.0.24
     dev: true
 
   /@types/jest/26.0.24:
@@ -4092,13 +4092,6 @@ packages:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
-    dev: true
-
-  /@types/jest/27.4.1:
-    resolution: {integrity: sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw==}
-    dependencies:
-      jest-matcher-utils: 27.5.1
-      pretty-format: 27.5.1
     dev: true
 
   /@types/json-schema/7.0.9:
@@ -6615,7 +6608,6 @@ packages:
   /colors/1.4.0:
     resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
     engines: {node: '>=0.1.90'}
-    requiresBuild: true
 
   /combined-stream/1.0.8:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
