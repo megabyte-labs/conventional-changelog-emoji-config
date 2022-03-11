@@ -14,6 +14,6 @@ export type CommitTypes =
   | 'wip'
   | 'chore'
 
-const types: readonly CommitTypes[] = Object.keys(CommitProfile.types) as CommitTypes[]
+const types: readonly CommitTypes[] = Object.keys(CommitProfile.types) as readonly CommitTypes[]
 
 export default types

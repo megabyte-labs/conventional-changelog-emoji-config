@@ -1,7 +1,7 @@
-import types from '../commit-types'
 import type { Context } from 'conventional-changelog-writer'
 import type { Commit } from 'conventional-commits-parser'
 import type { CommitTypes } from '../commit-types'
+import types from '../commit-types'
 import type { CustomConfig } from '../customConfig'
 import { scopeMapDisplayName } from './scopeMapDisplayName'
 import { getDisplayName } from './typeDisplayName'

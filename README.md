@@ -29,8 +29,8 @@
 </div>
 <br/>
 <div align="center">
-  <a href="https://www.npmjs.com/package/conventional-changelog-emoji-config" title="Version 1.4.3" target="_blank">
-    <img alt="Version: 1.4.3" src="https://img.shields.io/badge/version-1.4.3-blue.svg?cacheSeconds=2592000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&style=flat-square" />
+  <a href="https://www.npmjs.com/package/conventional-changelog-emoji-config" title="Version 1.4.8" target="_blank">
+    <img alt="Version: 1.4.8" src="https://img.shields.io/badge/version-1.4.8-blue.svg?cacheSeconds=2592000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&style=flat-square" />
   </a>
   <a href="https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/-/commits/master" title="GitLab CI build status" target="_blank">
     <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/npm/config/conventional-changelog-emoji-config?branch=master&label=build&logo=gitlab&logoColor=white&style=flat-square">
@@ -55,7 +55,7 @@
   </a>
 </div>
 
-> </br><h3 align="center">**A changelog configuration for Semantic Release that supports emojis**</h3></br>
+> </br><h4 align="center">**A changelog configuration for Semantic Release that supports emojis**</h4></br>
 
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 

@@ -1,5 +1,5 @@
-import type { CommitTypes } from '../commit-types'
 import { CommitProfile } from 'git-cz-emoji'
+import type { CommitTypes } from '../commit-types'
 
 export interface DisplayNameOptions {
   readonly withEmoji?: boolean
