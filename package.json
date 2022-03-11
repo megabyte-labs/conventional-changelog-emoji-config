@@ -49,8 +49,9 @@
     "cosmiconfig": "^7.0.1",
     "git-cz-emoji": "latest",
     "semantic-release": "^19.0.2",
-    "tslib": "^2.3.1"
+    "tslib": "latest"
   },
+  "optionalDependencies": {},
   "devDependencies": {
     "@commitlint/config-conventional": "^16.0.0",
     "@types/conventional-changelog-writer": "^4.0.1",
