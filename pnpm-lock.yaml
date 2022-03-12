@@ -30,7 +30,7 @@ specifiers:
   shelljs: ^0.8.5
   through2: ^4.0.2
   tslib: latest
-  typescript: ^4.5.5
+  typescript: latest
 
 dependencies:
   conventional-changelog-gitmoji-config: 1.4.3
