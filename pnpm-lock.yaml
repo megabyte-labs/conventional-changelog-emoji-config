@@ -16139,6 +16139,7 @@ packages:
   /semantic-release-gh/1.0.21:
     resolution: {integrity: sha512-cl7GNB1OFGVZcTSOSHhfSQtsiX2a9fXBfFPlQZVivzOgFSmvlxJag5eiFLo8t91xLsBEHPwm1vt1vntnGT6yEQ==}
     engines: {node: '>=14.18.0'}
+    deprecated: Deprecated in favor of 1.0.23
     dependencies:
       '@octokit/rest': 18.12.0
       '@semantic-release/error': 2.2.0
