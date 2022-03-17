@@ -1,15 +1,9 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
 [tool.poetry]
-name = "{{#if customPyPiPackageName}}{{customPyPiPackageName}}{{else}}{{#if customPackageName}}{{customPackageName}}{{else}}{{repository.prefix.github}}{{slug}}{{/if}}{{/if}}"
-version = "{{version}}"
-description = "{{description}}"
-authors = ["{{author.name}} <{{author.email}}>"]
-license = "{{license}}"
-readme = "README.md"
-homepage = "{{link.home}}"
-documentation = "{{docs.link}}"
-repository = "{{repository.github}}"
-keywords = [{{{poetryKeywords}}}]
-include = ["docs/CHANGELOG.md", "LICENSE"]
+authors = ["Brian Zalewski <brian@megabyte.space>"]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Development Status :: 5 - Production/Stable",
@@ -47,12 +41,20 @@ classifiers = [
   "Topic :: System :: Installation/Setup",
   "Topic :: Utilities"
 ]
+description = "A changelog configuration for Semantic Release that supports emojis"
+documentation = "https://megabyte.space/docs/npm/config"
+homepage = "https://megabyte.space"
+include = ["docs/CHANGELOG.md", "LICENSE"]
+keywords = ["changelog", "config", "conventional-changelog", "emoji", "gitmoji", "mblabs", "megabytelabs", "preset", "professormanhattan", "washingtondc"]
+license = "MIT"
+name = "conventional-changelog-emoji-config"
+readme = "README.md"
+repository = "https://github.com/ProfessorManhattan/conventional-changelog-emoji-config"
+version = "1.4.8"
 
 [tool.poetry.dependencies]
-python = ">=3.10.0,<4.0.0"
-
-# Semantic Extras
 pip = { version = "^21.3.0", optional = true }
+python = ">=3.10.0,<4.0.0"
 setuptools = { version = "^58.2.0", optional = true }
 twine = { version = "^3.8.0", optional = true }
 wheel = { version = "^0.37.1", optional = true }
@@ -73,13 +75,9 @@ semantic = [
 ]
 
 [tool.poetry.urls]
-"Bug Tracker" = "{{repository.gitlab}}{{repository.location.issues.gitlab}}"
-"GitHub" = "{{repository.github}}"
-"GitLab" = "{{repository.gitlab}}"
+"Bug Tracker" = "https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/-/issues"
+GitHub = "https://github.com/ProfessorManhattan/conventional-changelog-emoji-config"
+GitLab = "https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config"
 "Give Directly" = "https://givedirectly.org"
-"Open Collective" = "{{profile_link.opencollective}}/{{profile.opencollective}}"
-"Patreon" = "{{profile_link.patreon}}/{{profile.patreon}}"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+"Open Collective" = "https://opencollective.com/megabytelabs"
+Patreon = "https://www.patreon.com/ProfessorManhattan"
