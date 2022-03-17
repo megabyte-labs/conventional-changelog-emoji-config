@@ -33,6 +33,8 @@ exclude_patterns:
   - testdata/
   - Tests/
 plugins:
+  editorconfig:
+    enabled: true
   eslint:
     enabled: true
   yamllint:
