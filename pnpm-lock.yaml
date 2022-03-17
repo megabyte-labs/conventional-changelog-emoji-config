@@ -1796,7 +1796,7 @@ packages:
     resolution: {integrity: sha512-frsV83vLDNEYvBcoUa5aizV3JyG8GPTB/eUN9MhX+0rAuP2H0tFceoNj16evufDsNFJY9VKlTkZZUY5tfmiGcw==}
     dependencies:
       jest-message-util: 24.9.0
-      node-ipc: 9.2.2
+      node-ipc: 9.2.1
     dev: true
 
   /@jest-runner/electron/3.0.1:
@@ -1826,7 +1826,7 @@ packages:
       '@jest-runner/core': 3.0.0
       glob: 7.2.0
       jscodeshift: 0.6.4
-      node-ipc: 9.2.2
+      node-ipc: 9.2.1
       prettier: 1.19.1
       uuid: 3.4.0
       yargs: 15.4.1
@@ -8454,8 +8454,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /event-pubsub/4.2.3:
-    resolution: {integrity: sha1-DTFC9HrH4No4zcOEAtl+JRC8Xsw=}
+  /event-pubsub/4.3.0:
+    resolution: {integrity: sha512-z7IyloorXvKbFx9Bpie2+vMJKKx1fH1EN5yiTfp8CiLOTptSYy1g8H4yDpGlEdshL1PBiFtBHepF2cNsqeEeFQ==}
     engines: {node: '>=4.0.0'}
     dev: true
 
@@ -13633,15 +13633,13 @@ packages:
     resolution: {integrity: sha1-h6kGXNs1XTGC2PlM4RGIuCXGijs=}
     dev: true
 
-  /node-ipc/9.2.2:
-    resolution: {integrity: sha512-e+cCHxf0zs4scDkTrFruxOFjhRsmgiGbKqMvcMrBHZnkvLUWHOBayDnKNADKndg3UkTnqHJ9nADcJbjFFaqTNQ==}
-    engines: {node: '>=4.0.0'}
+  /node-ipc/9.2.1:
+    resolution: {integrity: sha512-mJzaM6O3xHf9VT8BULvJSbdVbmHUKRNOH7zDDkCrA1/T+CVjq2WVIDfLt0azZRXpgArJtl3rtmEozrbXPZ9GaQ==}
+    engines: {node: '>=8.0.0'}
     dependencies:
-      colors: 1.4.0
-      event-pubsub: 4.2.3
+      event-pubsub: 4.3.0
       js-message: 1.0.7
       js-queue: 2.0.2
-      peacenotwar: 9.1.6
     dev: true
 
   /node-libs-browser/2.2.1:
@@ -14490,11 +14488,6 @@ packages:
       ripemd160: 2.0.2
       safe-buffer: 5.2.1
       sha.js: 2.4.11
-    dev: true
-
-  /peacenotwar/9.1.6:
-    resolution: {integrity: sha512-pApXV74SJsXxrJ7XQohl+oqLf00U0tKNrmHUa5ct7XfYUHnvGNaQfBFo9JpTpDbkn4bpNrPekVeO50Zfd/vMAA==}
-    engines: {node: '>=4.0.0'}
     dev: true
 
   /performance-now/2.1.0:
