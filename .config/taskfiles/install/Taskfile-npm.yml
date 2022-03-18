@@ -154,6 +154,8 @@ tasks:
           PACKAGE: husky
 
   install:npm:
+    deps:
+      - global:package-manager
     vars:
       BIN: '{{if .BIN_NAME}}{{.BIN_NAME}}{{else}}{{.PACKAGE}}{{end}}'
     run: when_changed
@@ -162,7 +164,6 @@ tasks:
       start: Installing NPM package `{{.PACKAGE}}` globally
       success: Installed NPM package `{{.PACKAGE}}` globally
     cmds:
-      - task: global:package-manager
       - '{{.NPM_PROGRAM}} install -g {{.PACKAGE}}'
     status:
       - type {{.BIN}} > /dev/null
