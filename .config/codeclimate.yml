@@ -39,6 +39,10 @@ plugins:
     enabled: true
   jscpd:
     enabled: true
+  proselint:
+    enabled: true
+  semgrep:
+    enabled: true
   shellcheck:
     enabled: true
   yamllint:
