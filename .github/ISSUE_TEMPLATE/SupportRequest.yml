@@ -1,3 +1,4 @@
+---
 body:
   - attributes:
       value: |
@@ -19,7 +20,8 @@ body:
       required: true
 
   - attributes:
-      description: '**Optional** For the fastest, most-effective support we offer paid services. If you are interested, answer *Yes* and we will get in contact with you immediately.'
+      description: '**Optional** For the fastest, most-effective support we offer paid services. If you are interested,
+        answer *Yes* and we will get in contact with you immediately.'
       label: 😀 Are you interested in paid support?
       options:
         - Yes
@@ -38,6 +40,7 @@ body:
     validations:
       required: false
 
+  # yamllint disable rule:line-length
   - attributes:
       value: |
         ## :heart: Love Megabyte Labs?
