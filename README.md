@@ -1,6 +1,6 @@
 <!-- ⚠️ This README has been generated from the file(s) ".config/docs/blueprint-readme-config.md" ⚠️--><div align="center">
   <center>
-    <a href="https://github.com/ProfessorManhattan/conventional-changelog-emoji-config">
+    <a href="https://github.com/megabyte-labs/conventional-changelog-emoji-config">
       <img width="148" height="148" alt="Conventional Changelog Emoji Config logo" src="https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/-/raw/master/logo.png" />
     </a>
   </center>
@@ -14,13 +14,13 @@
   <a href="https://megabyte.space" title="Megabyte Labs homepage" target="_blank">
     <img alt="Homepage" src="https://img.shields.io/website?down_color=%23FF4136&down_message=Down&label=Homepage&logo=home-assistant&logoColor=white&up_color=%232ECC40&up_message=Up&url=https%3A%2F%2Fmegabyte.space&style=for-the-badge" />
   </a>
-  <a href="https://github.com/ProfessorManhattan/conventional-changelog-emoji-config/blob/master/docs/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
+  <a href="https://github.com/megabyte-labs/conventional-changelog-emoji-config/blob/master/docs/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
     <img alt="Contributing" src="https://img.shields.io/badge/Contributing-Guide-0074D9?logo=github-sponsors&logoColor=white&style=for-the-badge" />
   </a>
   <a href="https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/" title="Chat with us on Slack" target="_blank">
     <img alt="Slack" src="https://img.shields.io/badge/Slack-Chat-e01e5a?logo=slack&logoColor=white&style=for-the-badge" />
   </a>
-  <a href="https://github.com/ProfessorManhattan/conventional-changelog-emoji-config" title="GitHub mirror" target="_blank">
+  <a href="https://github.com/megabyte-labs/conventional-changelog-emoji-config" title="GitHub mirror" target="_blank">
     <img alt="GitHub" src="https://img.shields.io/badge/Mirror-GitHub-333333?logo=github&style=for-the-badge" />
   </a>
   <a href="https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config" title="GitLab repository" target="_blank">
@@ -50,7 +50,7 @@
   <a href="website.documentation/npm" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?logo=readthedocs&logoColor=white&style=flat-square" />
   </a>
-  <a href="https://github.com/ProfessorManhattan/conventional-changelog-emoji-config/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/megabyte-labs/conventional-changelog-emoji-config/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHpJREFUCNdjYOD/wMDAUP+PgYHxhzwDA/MB5gMM7AwMDxj4GBgKGGQYGCyAEEgbMDDwAAWAwmk8958xpIOI5zKH2RmOyhxmZjguAiKmgIgtQOIYmFgCIp4AlaQ9OczGkJYCJEAGgI0CGwo2HmwR2Eqw5SBnNIAdBHYaAJb6KLM15W/CAAAAAElFTkSuQmCC&style=flat-square" />
   </a>
 </div>
@@ -87,7 +87,7 @@ The following versions of Node.js and Python are required for development:
 - **[Node.js >14.18.0](repository.project.node)**
 - **[Python >3.10.0](repository.project.python)**
 
-Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/ProfessorManhattan/conventional-changelog-emoji-config/blob/main/docs/CONTRIBUTING.md) or simply run:
+Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/conventional-changelog-emoji-config/blob/main/docs/CONTRIBUTING.md) or simply run:
 
 ```shell
 npm run help
@@ -148,7 +148,7 @@ interface ChangelogConfig {
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ProfessorManhattan/conventional-changelog-emoji-config/issues). If you would like to contribute, please take a look at the [contributing guide](https://github.com/ProfessorManhattan/conventional-changelog-emoji-config/blob/master/docs/CONTRIBUTING.md).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/megabyte-labs/conventional-changelog-emoji-config/issues). If you would like to contribute, please take a look at the [contributing guide](https://github.com/megabyte-labs/conventional-changelog-emoji-config/blob/master/docs/CONTRIBUTING.md).
 
 <details>
 <summary><b>Sponsorship</b></summary>
