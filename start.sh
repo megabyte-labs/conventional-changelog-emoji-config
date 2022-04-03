@@ -524,6 +524,7 @@ if [ -z "$NO_INSTALL_HOMEBREW" ]; then
       if ! type yq &> /dev/null; then
         # shellcheck disable=SC2016
         brew install yq || logger info 'There may have been an issue installing `yq` with `brew`'
+      fi
     fi
   fi
 fi
