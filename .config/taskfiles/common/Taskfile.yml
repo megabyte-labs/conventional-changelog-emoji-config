@@ -70,13 +70,13 @@ tasks:
       - task: husky:install
       - task: husky:permissions
     status:
-      - '[ "{{.DOCKER_ENVIRONMENT}}" == "true" ]'
+      - '[ "{{.DOCKER_ENVIRONMENT}}" == "true" ] || [ "$SEMANTIC_RELEASE" == "true" ]'
 
   husky:ci:
     cmds:
       - task: husky:permissions
     status:
-      - '[ "{{.DOCKER_ENVIRONMENT}}" != "true" ]'
+      - '[ "{{.DOCKER_ENVIRONMENT}}" != "true" ] || [ "$SEMANTIC_RELEASE" == "true" ]'
 
   husky:install:
     deps:
