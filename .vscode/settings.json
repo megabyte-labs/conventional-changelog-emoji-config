@@ -52,10 +52,18 @@
     "vue",
     "yaml"
   ],
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
   "go.lintFlags": ["--fast"],
   "go.lintTool": "golangci-lint",
+  "javascript.format.semicolons": "remove",
+  "javascript.suggest.completeFunctionCalls": true,
+  "python.languageServer": "Pylance",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.format.semicolons": "remove",
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "yaml.format.printWidth": 160,
+  "yaml.format.singleQuote": true
 }
