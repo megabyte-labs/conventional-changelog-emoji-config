@@ -32,16 +32,18 @@ env:
       if [ '{{.REPOSITORY_TYPE}}' == 'python' ] || [ "$(jq -r '.blueprint.pythonPublish' package.json)" == 'true' ]; then
         echo 'release'
       fi
+  SNAP_PACKAGE:
+    sh: jq -r '.blueprint.snapPackage' package.json
 
 tasks:
   add-channel:
     deps:
       - add-channel:ansible
       - add-channel:docker
-      - add-channel:go
       - add-channel:npm
       - add-channel:packer
       - add-channel:python
+      - add-channel:snap
     summary: |
       Must return a parseable JSON string that resembles the following format:
 
@@ -88,15 +90,10 @@ tasks:
     status:
       - '[ -z "$RELEASE_DOCKER" ]'
 
-  add-channel:go:
-    cmds:
-      - 'true'
-    status:
-      - '[ -z "$RELEASE_GO" ]'
-
   add-channel:npm:
     cmds:
-      - 'true'
+      - |
+        echo '{"name": "Testing", "url": "https://megabyte.space"}'
     status:
       - '[ -z "$RELEASE_NPM" ]'
 
@@ -138,6 +135,16 @@ tasks:
         echo '{"name": "pip package", "url": "{{.PYPI_URL}}"}'
     status:
       - '[ -z "$RELEASE_PYTHON" ]'
+
+  add-channel:snap:
+    vars:
+      SNAP_PACKAGE:
+        sh: echo "$SNAP_PACKAGE"
+    cmds:
+      - |
+        echo '{"name": "Snap", "url": "https://snapcraft.io/{{.SNAP_PACKAGE}}"}'
+    status:
+      - '[ "$SNAP_PACKAGE" == "null" ]'
 
   analyze:
     summary: |
@@ -248,6 +255,108 @@ tasks:
     status:
       - '[ -z "$RELEASE_PYTHON" ]'
 
+  notes:
+    cmds:
+      - task: notes:introduction
+      - task: notes:project-specific
+
+  notes:introduction:
+    cmds:
+      - echo 'Grab this version by running:\n\n'
+
+  notes:project-specific:
+    deps:
+      - notes:ansible
+      - notes:docker
+      - notes:go
+      - notes:npm
+      - notes:packer
+      - notes:python
+
+  notes:ansible:
+    vars:
+      PKG_NAME:
+        sh: |
+          if [ -n "$RELEASE_ANSIBLE" ]; then
+            echo "{{.GALAXY_NAMESPACE}}.{{.GALAXY_ROLE_NAME}}"
+          fi
+      VERSION:
+        sh: jq -r '.version' package.json
+    cmds:
+      - echo '```\nansible-galaxy install {{.PKG_NAME}},v{{.VERSION}}\n```\n'
+    status:
+      - '[ -z "$RELEASE_ANSIBLE" ]'
+
+  notes:docker:
+    vars:
+      IMAGE:
+        sh: |
+          if [ -n "$RELEASE_DOCKER" ]; then
+            echo "{{.DOCKERHUB_PROFILE}}/$(jq -r '.blueprint.slug' package.json)"
+          fi
+      VERSION:
+        sh: jq -r '.version' package.json
+    cmds:
+      - echo '```\ndocker pull {{.IMAGE}}:{{.VERSION}}\n```\n'
+    status:
+      - '[ -z "$RELEASE_DOCKER" ]'
+
+  notes:go:
+    vars:
+      GITHUB_GO_URL:
+        sh: jq -r '.blueprint.repository.github' package.json | sed 's/https:\/\///'
+      VERSION:
+        sh: jq -r '.version' package.json
+    cmds:
+      - echo '```\ngo install {{.GITHUB_GO_URL}}@v{{.VERSION}}\n```\n'
+    status:
+      - '[ -z "$RELEASE_GO" ]'
+
+  notes:npm:
+    vars:
+      FLAG:
+        sh: |
+          if [ '{{.REPOSITORY_SUBTYPE}}' == 'cli' ]; then
+            echo ' -g'
+          elif [ '{{.REPOSITORY_SUBTYPE}}' == 'config' ] || [ '{{.REPOSITORY_SUBTYPE}}' == 'plugin' ]; then
+            echo ' --save-dev'
+          else
+            echo ' --save'
+          fi
+      PKG_NAME:
+        sh: jq -r '.name' package.json
+      VERSION:
+        sh: jq -r '.version' package.json
+    cmds:
+      - echo '```\nnpm i{{.FLAG}} {{.PKG_NAME}}@{{.VERSION}}\n```\n'
+    status:
+      - '[ -z "$RELEASE_NPM" ]'
+
+  notes:packer:
+    cmds:
+      - task: :build
+    status:
+      - '[ -z "$RELEASE_PACKER" ]'
+
+  notes:python:
+    vars:
+      PKG_NAME:
+        sh: |
+          if [ -n "$RELEASE_PYTHON" ]; then
+            PKG_NAME="$(jq -r '.blueprint.customPyPiPackageName' package.json)"
+            if [ "$PKG_NAME" == 'null' ]; then
+              PKG_NAME="$(jq -r '.blueprint.customPackageName' package.json)"
+            fi
+            if [ "$PKG_NAME" == 'null' ]; then
+              PKG_NAME="$(jq -r '.name' package.json)"
+            fi
+            echo "$PKG_NAME"
+          fi
+    cmds:
+      - echo '```\npip3 install {{.PKG_NAME}}=={{.VERSION}}\n```\n'
+    status:
+      - '[ -z "$RELEASE_PYTHON" ]'
+
   prepare:
     deps:
       - prepare:ansible
@@ -339,6 +448,8 @@ tasks:
       ```
     cmds:
       - task: :npm:publish
+      - |
+        echo '{"name": "Testing2", "url": "https://megabyte.space"}'
     status:
       - '[ -z "$RELEASE_NPM" ]'
 
