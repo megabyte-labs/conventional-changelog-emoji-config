@@ -6,6 +6,8 @@ In order to leverage the software that this Homebrew tap provides, you first nee
 brew tap installdoc/tap
 ```
 
+## Example Install
+
 After the tap is installed, you can install software by specifying its short name. For instance, if you wanted to install [Bodega](https://github.com/megabyte-labs/Bodega) then you would run:
 
 ```shell
