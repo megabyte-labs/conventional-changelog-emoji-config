@@ -100,7 +100,7 @@
     "customPackageName": "conventional-changelog-emoji-config",
     "description": "A changelog configuration for Semantic Release that supports emojis",
     "github_id": "R_kgDOG04FBQ",
-    "gitlab_group_id": "",
+    "gitlab_group_id": "12165875",
     "gitlab_project_id": "33610125",
     "group": "npm",
     "name": "Conventional Changelog Emoji Config",
