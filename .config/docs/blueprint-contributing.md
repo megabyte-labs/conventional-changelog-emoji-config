@@ -8,4 +8,5 @@
 {{ load:.config/docs/contributing/testing.md }}
 {{ load:.config/docs/contributing/pull-requests.md }}
 {{ load:.config/docs/common/contributing/styleguides.md }}
+{{ load:.config/docs/common/contributing/troubleshooting.md }}
 {{ load:.config/docs/common/contributing/contributors.md }}
