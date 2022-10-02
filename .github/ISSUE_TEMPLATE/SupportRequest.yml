@@ -24,7 +24,9 @@ body:
         answer *Yes* and we will get in contact with you immediately.'
       label: 😀 Are you interested in paid support?
       options:
+        # yamllint disable-line rule:truthy
         - Yes
+        # yamllint disable-line rule:truthy
         - No
     id: contributor
     type: input
