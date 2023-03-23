@@ -24,7 +24,7 @@
     <img alt="Version: {{ pkg.version }}" src="https://img.shields.io/badge/version-{{ pkg.version }}-blue.svg?cacheSeconds=2592000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&style={{ alt_badge_style }}" />
   </a>
   <a href="{{ repository.gitlab }}{{ repository.location.commits.gitlab }}" title="GitLab CI build status" target="_blank">
-    <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/{{ repository.group.npm_path }}/{{ subgroup }}/{{ slug }}?branch=master&label=build&logo=gitlab&logoColor=white&style={{ alt_badge_style }}">
+    <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/{{ repository.group.npm_path }}/{{ subgroup }}/{{ slug }}?branch=master&label=build&logo=gitlab&logoColor=white&style={{ alt_badge_style }}" />
   </a>
   <a href="https://www.npmjs.com/package/{{ pkg.name }}" title="Dependency status reported by Depfu" target="_blank">
     <img alt="Dependency status reported by Depfu" src="https://img.shields.io/depfu/megabyte-labs/{{ customPackageName }}?logo=codeforces&logoColor=white&style={{ alt_badge_style }}&logo=npm" />

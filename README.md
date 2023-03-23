@@ -36,7 +36,7 @@
     <img alt="Version: 1.4.8" src="https://img.shields.io/badge/version-1.4.8-blue.svg?cacheSeconds=2592000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&style=flat-square" />
   </a>
   <a href="https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/-/commits/master" title="GitLab CI build status" target="_blank">
-    <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/npm/config/conventional-changelog-emoji-config?branch=master&label=build&logo=gitlab&logoColor=white&style=flat-square">
+    <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/npm/config/conventional-changelog-emoji-config?branch=master&label=build&logo=gitlab&logoColor=white&style=flat-square" />
   </a>
   <a href="https://www.npmjs.com/package/conventional-changelog-emoji-config" title="Dependency status reported by Depfu" target="_blank">
     <img alt="Dependency status reported by Depfu" src="https://img.shields.io/depfu/megabyte-labs/conventional-changelog-emoji-config?logo=codeforces&logoColor=white&style=flat-square&logo=npm" />

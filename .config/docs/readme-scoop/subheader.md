@@ -21,7 +21,7 @@
 <br/>
 <div align="center">
   <a href="{{ repository.gitlab }}{{ repository.location.commits.gitlab }}" title="GitLab CI build status" target="_blank">
-    <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/{{ repository.group.cloud_path }}/{{ slug }}?branch=master&label=build&logo=gitlab&logoColor=white&style={{ alt_badge_style }}">
+    <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/{{ repository.group.cloud_path }}/{{ slug }}?branch=master&label=build&logo=gitlab&logoColor=white&style={{ alt_badge_style }}" />
   </a>
   <a href="https://install.doctor" target="_blank">
     <img alt="Documentation / Instructions" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?logo=readthedocs&logoColor=white&style={{ alt_badge_style }}" />
